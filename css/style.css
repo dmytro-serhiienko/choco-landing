@@ -56,9 +56,6 @@ body {
   padding: 14px 40px;
   width: 146px;
   height: 46px;
-}
-
-.text-btn-buy-now {
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
@@ -139,7 +136,7 @@ body {
   color: white;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.28;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   border-radius: 15px;
@@ -263,14 +260,6 @@ body {
   list-style: none;
 }
 
-.article-fifth-section {
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 15px;
-  width: 360px;
-  height: 200px;
-  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
-  background: white;
-}
 /* #endregion */
 /* #region Footer */
 
