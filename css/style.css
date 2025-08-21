@@ -5,6 +5,13 @@ body {
 
 /* #region Header */
 
+.header {
+  /* added */
+  display: flex;
+  justify-content: space-between;
+  /* added */
+}
+
 .logo-header {
   font-weight: 700;
   font-size: 18px;
@@ -12,7 +19,10 @@ body {
   text-decoration: none;
   letter-spacing: -0.03em;
   line-height: 1.11111;
-  display: flex;
+  /* added */
+  margin-top: 28px;
+  margin-left: 32px;
+  /* added */
 }
 
 .span-part-header-logo {
@@ -21,16 +31,21 @@ body {
 
 .nav-list-header {
   list-style: none;
+  /* add */
   display: flex;
+  gap: 24px;
+  margin-top: 30px;
+  margin-right: 32px;
+  /* added */
 }
 
 .nav-list-item {
   font-size: 14px;
   font-weight: 500;
   color: black;
-  text-decoration: none;
   letter-spacing: -0.02em;
   line-height: 1.14286;
+  text-decoration: none;
   margin-left: 24px;
 }
 /* #endregion */
@@ -130,6 +145,10 @@ body {
 
 .list-third-section {
   list-style: none;
+  /* added */
+  display: flex;
+  justify-content: space-around;
+  /* added */
 }
 .list-item-third-section-choco {
   background-color: orange;
@@ -141,6 +160,13 @@ body {
   text-transform: uppercase;
   border-radius: 15px;
   border: 1px solid orange;
+  /* added */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 270px;
+  height: 270px;
+  /* added */
 }
 
 .list-item-third-section-milk {
@@ -152,6 +178,13 @@ body {
   color: black;
   border-radius: 15px;
   border: 1px solid orange;
+  /* added */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 270px;
+  height: 270px;
+  /* added */
 }
 
 .list-item-third-section-sweet-choco {
@@ -178,7 +211,24 @@ body {
 }
 
 /* fourth section */
+/* added */
+.container-fourth-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 
+.text-fourth-section {
+  background-color: white;
+  border-radius: 15px;
+  margin-right: 32px;
+  padding: 32px;
+}
+
+.img-fourth-section {
+  margin-left: 32px;
+}
+/* added */
 .title-fourth-section {
   font-weight: 600;
   font-size: 24px;
