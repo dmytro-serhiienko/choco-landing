@@ -30,6 +30,7 @@ img {
 section {
   padding: 72px;
 }
+
 /* #region Header */
 
 .header {
@@ -384,6 +385,7 @@ section {
 
 .footer {
   background-color: #1e1823;
+  height: 298px;
 }
 
 .footer-title {
@@ -392,6 +394,9 @@ section {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: white;
+  padding-left: 32px;
+  padding-top: 50px;
+  max-width: 300px;
 }
 
 .footer-span {
