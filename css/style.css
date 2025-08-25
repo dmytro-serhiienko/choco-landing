@@ -24,7 +24,16 @@ a {
 }
 
 /* HEADER */
+
+.header {
+  /* form */
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 32px;
+}
+
 .header-logo {
+  /* font */
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
@@ -34,6 +43,12 @@ a {
 
 .header-logo-span {
   font-style: italic;
+}
+
+.header-navigation-list {
+  /* form */
+  display: flex;
+  gap: 24px;
 }
 
 .header-navigation-item {
@@ -55,6 +70,11 @@ a {
 /* 1 section "HERO" */
 .hero {
   background-color: #1e1823;
+  width: 1200px;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 72px;
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -110,19 +130,29 @@ a {
 .features {
   background-color: #1e1823;
   width: 1200px;
+  width: 100%;
   height: 260px;
+  margin-bottom: 100px;
 }
 
 .features-list {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .features-list-item {
+  width: 308px;
+  height: 142px;
 }
 
 .features-title {
   font-weight: 600;
   font-size: 18px;
   color: white;
+  padding-bottom: 18px;
 }
 
 .features-text {
@@ -133,6 +163,10 @@ a {
 }
 
 /* 3 section "TASTE" */
+.taste {
+  display: flex;
+}
+
 .taste-title {
   font-weight: 600;
   font-size: 24px;
@@ -141,6 +175,10 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: black;
+  /* form */
+  display: flex;
+  align-items: center;
+  max-width: 411px;
 }
 
 .span-taste {
@@ -154,6 +192,10 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   color: black;
+  /* form */
+  display: flex;
+  align-items: center;
+  max-width: 486px;
 }
 
 .taste-list {
