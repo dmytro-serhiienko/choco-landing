@@ -53,9 +53,13 @@
           of pure delight!
         </h1>
 
-        <button type="button" class="hero-btn-buy-now">Buy now</button>
-        <a class="hero-btn-how-its-made" href="">How it`s made</a>
-        <a class="hero-btn-scroll-down" href="">scroll down</a>
+        <div class="hero-btn-global-container">
+          <div class="hero-btn-container">
+            <button type="button" class="hero-btn-buy-now">Buy now</button>
+            <a class="hero-btn-how-its-made" href="">How it`s made</a>
+          </div>
+          <a class="hero-btn-scroll-down" href="">scroll down</a>
+        </div>
       </section>
       <section class="features">
         <ul class="features-list">
@@ -255,11 +259,13 @@
     <!-- #endregion -->
     <!-- #region Footer -->
     <footer class="footer">
-      <div class="footer-container">
-        <p class="footer-text">
-          <span class="footer-span">Chocolate</span> a delicious cure for a bad
-          day
-        </p>
+      <div class="footer-global-container">
+        <div class="footer-container">
+          <p class="footer-text">
+            <span class="footer-span">Chocolate</span> a delicious cure for a
+            bad day
+          </p>
+        </div>
         <div class="footer-contact-container">
           <p class="footer-contact-us">Contact us</p>
           <address class="contact">
@@ -281,19 +287,23 @@
         </div>
       </div>
 
-      <nav class="nav-footer" aria-label="Footer Navigation">
-        <ul class="footer-menu-list">
-          <li class="footer-menu-list-item">
-            <a class="footer-menu-list-link" href="">Home</a>
-          </li>
-          <li class="footer-menu-list-item">
-            <a class="footer-menu-list-link" href="">How it`s made?</a>
-          </li>
-          <li class="footer-menu-list-item">
-            <a class="footer-menu-list-link" href="">Chocolate is loved</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="footer-border-container"></div>
+
+      <div class="nav-footer-container">
+        <nav class="nav-footer" aria-label="Footer Navigation">
+          <ul class="footer-menu-list">
+            <li class="footer-menu-list-item">
+              <a class="footer-menu-list-link" href="">Home</a>
+            </li>
+            <li class="footer-menu-list-item">
+              <a class="footer-menu-list-link" href="">How it`s made?</a>
+            </li>
+            <li class="footer-menu-list-item">
+              <a class="footer-menu-list-link" href="">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
     <!-- #endregion -->
   </body>

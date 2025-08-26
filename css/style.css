@@ -2,6 +2,7 @@ body {
   font-family: Montserrat, sans-serif;
   background-color: #fafafa;
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -24,8 +25,13 @@ a {
   margin: 0;
 }
 
-/* HEADER */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
+/* #region HEADER */
 .header {
   /* form */
   display: flex;
@@ -67,6 +73,7 @@ a {
   letter-spacing: -0.02em;
   color: black;
 }
+/* #endregion */
 
 /* 1 section "HERO" */
 .hero {
@@ -76,6 +83,10 @@ a {
   height: 600px;
   margin-bottom: 72px;
   border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hero-title {
@@ -84,37 +95,60 @@ a {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: white;
+
+  max-width: 484px;
+  margin-bottom: 32px;
+  margin-left: 72px;
+}
+
+/* CONTAINERS */
+.hero-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-btn-global-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 72px;
+  padding-right: 72px;
+
+  padding-bottom: 40px;
 }
 
 .hero-btn-buy-now {
   font-weight: 600;
   font-size: 14px;
   color: white;
+  border: 1px solid orange;
   border-radius: 100px;
-  padding: 14px 40px;
   width: 146px;
   height: 46px;
   background: orange;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 14px;
   cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 14px;
 }
 
 .hero-btn-how-its-made {
   font-weight: 600;
   font-size: 14px;
   color: white;
+
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
-  gap: 14px;
+
   border: 1px solid white;
   border-radius: 100px;
-  padding: 14px 40px;
   width: 183px;
   height: 45px;
 }
@@ -125,6 +159,10 @@ a {
   line-height: 1.28;
   letter-spacing: -0.03em;
   color: white;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* 2 section "FEATURES" */
@@ -285,11 +323,11 @@ a {
 
 /* 4 section "RECIPE" */
 
-.recipe {
-}
+/* .recipe {
+} */
 
-.recipe-img {
-}
+/* .recipe-img {
+} */
 
 .recipe-container {
   display: flex;
@@ -462,24 +500,14 @@ a {
 }
 
 /* FOOTER */
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
 
 .footer {
   background-color: #1e1823;
   width: 100%;
   height: 298px;
   margin-top: 100px;
+  height: 100%;
   /* form */
-  display: flex;
-  justify-content: center;
 }
 .footer-text {
   font-weight: 500;
@@ -488,10 +516,7 @@ a {
   letter-spacing: -0.02em;
   color: white;
   max-width: 300px;
-  display: block;
-  text-align: left;
-  margin-top: 50px;
-  margin: 0;
+  /* form */
 }
 
 .footer-span {
@@ -504,19 +529,54 @@ a {
   color: white;
 }
 
-.footer-contact-container {
-  flex-direction: column;
-  padding-top: 0px;
-  align-items: flex-end;
-  justify-content: space-between;
+.footer-container {
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
 }
+
+/* .footer-contact-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-end;
+  width: 100%;
+  padding-right: 32px;
+  padding-top: 50px;
+  align-items: flex-start;
+  text-align: left;
+} */
+
+.footer-contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-border-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 54px 32px 54px 32px;
+}
+
+.footer-global-container {
+  display: flex;
+  width: 100;
+}
+
+.nav-footer-container {
+  display: flex;
+  align-items: flex-end;
+}
+
 .contact {
 }
+
 .footer-list {
-  padding: 0;
 }
-.footer-list-item {
-}
+
 .footer-contact-item {
   font-weight: 400;
   font-size: 14px;
@@ -527,23 +587,27 @@ a {
 }
 
 .nav-footer {
-  display: flex;
-  align-items: end;
 }
+
 .footer-menu-list {
+  padding-top: 24px;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
-  gap: 358px;
+  gap: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 84px;
 }
 
 .footer-menu-list-item {
 }
+
 .footer-menu-list-link {
   color: white;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  gap: 24px;
 }
