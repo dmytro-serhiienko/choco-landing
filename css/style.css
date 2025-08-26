@@ -21,6 +21,7 @@ ul {
 
 a {
   text-decoration: none;
+  margin: 0;
 }
 
 /* HEADER */
@@ -179,9 +180,10 @@ a {
   text-align: center;
   color: black;
   /* form */
-  display: flex;
+  display: block;
   align-items: center;
   max-width: 411px;
+  padding-bottom: 28px;
 }
 
 .span-taste {
@@ -208,6 +210,24 @@ a {
   padding: 0;
   margin: 32px 0 0 0;
   list-style: none;
+}
+
+.taste-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-bottom: 100px;
+}
+
+.taste-list-item h3 {
+  padding-bottom: 28px;
+  padding-top: 36px;
+  display: flex;
+  text-align: left;
+  width: 100%;
 }
 
 .choco {
@@ -265,6 +285,29 @@ a {
 
 /* 4 section "RECIPE" */
 
+.recipe {
+}
+
+.recipe-img {
+}
+
+.recipe-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-container-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  max-width: 516px;
+  height: 400px;
+  justify-content: center;
+}
+
 .recipe-title {
   font-weight: 600;
   font-size: 24px;
@@ -273,6 +316,9 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: black;
+  /* form */
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .recipe-span {
@@ -284,14 +330,18 @@ a {
   font-size: 18px;
   line-height: 1.33;
   color: black;
+  /* form */
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-bottom: 28px;
 }
 
 .recipe-list {
   list-style-type: disc;
-  background-color: white;
-  border-radius: 15px;
-  width: 516px;
-  height: 400px;
+}
+
+.recipe-list-item {
+  padding-bottom: 24px;
 }
 
 .recipe-list-text {
@@ -306,6 +356,7 @@ a {
 
 .review {
   display: flex;
+  flex-direction: column;
 }
 
 .review-title {
@@ -317,29 +368,47 @@ a {
   text-align: center;
   color: black;
   /* form */
+  text-align: center;
+  margin-top: 100px;
 }
 
 .review-span {
   color: orange;
 }
 
+.review-container {
+  display: flex;
+  justify-content: center;
+}
+
 .review-list {
   /* form */
   display: flex;
+  gap: 28px;
 }
 
 .review-userpic {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-.review-list-item {
+.review-container-text {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   max-width: 360px;
-  max-height: 200px;
+  height: 200px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: white;
+  /* form */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.review-list-item {
   /* form */
   align-items: center;
   margin-top: 49px;
@@ -377,24 +446,40 @@ a {
   font-size: 18px;
   color: black;
   /* form */
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  gap: 14px;
   border: 1px solid orange;
   border-radius: 100px;
-  padding: 14px 40px;
   width: 222px;
   height: 50px;
+  /* form 2 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-btn-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* FOOTER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
 .footer {
   background-color: #1e1823;
   width: 100%;
   height: 298px;
+  margin-top: 100px;
+  /* form */
   display: flex;
+  justify-content: center;
 }
 .footer-text {
   font-weight: 500;
@@ -403,7 +488,10 @@ a {
   letter-spacing: -0.02em;
   color: white;
   max-width: 300px;
-  display: flex;
+  display: block;
+  text-align: left;
+  margin-top: 50px;
+  margin: 0;
 }
 
 .footer-span {
@@ -413,34 +501,34 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
-  text-align: center;
   color: white;
 }
 
 .footer-contact-container {
-  display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  padding-top: 50px;
-  padding-right: 32px;
+  padding-top: 0px;
+  align-items: flex-end;
+  justify-content: space-between;
 }
-/* .contact {
+.contact {
 }
 .footer-list {
+  padding: 0;
 }
 .footer-list-item {
-} */
+}
 .footer-contact-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-  text-align: center;
   color: white;
   font-style: normal;
 }
 
 .nav-footer {
+  display: flex;
+  align-items: end;
 }
 .footer-menu-list {
   display: flex;
