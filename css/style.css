@@ -18,6 +18,7 @@ p {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -48,7 +49,7 @@ img {
   color: black;
 }
 
-.header-logo-span {
+.header-logo .active {
   font-style: italic;
 }
 
@@ -166,6 +167,21 @@ img {
 }
 
 /* 2 section "FEATURES" */
+
+.visually-hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features {
   background-color: #1e1823;
   width: 1200px;
@@ -224,7 +240,7 @@ img {
   padding-bottom: 28px;
 }
 
-.span-taste {
+.taste-title .active {
   color: orange;
 }
 
@@ -359,7 +375,7 @@ img {
   margin-bottom: 50px;
 }
 
-.recipe-span {
+.recipe-title .active {
   color: orange;
 }
 
@@ -410,7 +426,7 @@ img {
   margin-top: 100px;
 }
 
-.review-span {
+.review-title .active {
   color: orange;
 }
 
@@ -519,9 +535,10 @@ img {
   /* form */
 }
 
-.footer-span {
+.footer-text .active {
   color: orange;
 }
+
 .footer-contact-us {
   font-weight: 500;
   font-size: 14px;
