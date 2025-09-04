@@ -199,9 +199,11 @@ img {
 }
 
 .features-list-item {
+  /* width: calc((100% - 2 * 70px) / 3); */
   width: 308px;
   height: 142px;
 }
+
 
 .features-title {
   font-weight: 600;
@@ -412,7 +414,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-
+/* dvdvdvd */
 .review-title {
   font-weight: 600;
   font-size: 24px;
