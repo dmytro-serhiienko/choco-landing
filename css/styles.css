@@ -162,6 +162,16 @@ img {
   gap: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-menu-list {
+    display: flex;
+  }
+
+  .header-contacts-list {
+    display: flex;
+  }
+}
+
 .header-contacts-icon {
   fill: transparent;
   stroke: #111111;
@@ -183,6 +193,12 @@ img {
 /* .header-menu-link:is(:hover, :focus) {
   color: #fd9222;
 } */
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
 
 .mob-menu {
   height: 100%;
