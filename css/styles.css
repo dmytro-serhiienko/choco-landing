@@ -125,11 +125,6 @@ img {
     background-image: url(../img/logo-img.svg);
     background-size: cover;
   }
-
-  &::before {
-    content: "1.";
-    color: #fd9222;
-  }
 }
 
 .header-logo:hover::after {
